@@ -1,5 +1,9 @@
 # express-method-override-get-post-support
 
+by [Bideo Wego](https://github.com/BideoWego)
+
+View it on [NPM](https://www.npmjs.com/package/express-method-override-get-post-support)
+
 Provides support for the Express method-override package to override HTTP methods via GET requests in the query string and POST requests in the POST body.
 
 
