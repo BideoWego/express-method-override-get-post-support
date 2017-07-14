@@ -23,8 +23,32 @@ const getPostSupport = require('express-method-override-get-post-support');
 
 app.use(methodOverride(
   getPostSupport.callback,
-  getPostSupport.options
+  getPostSupport.options // { methods: ['POST', 'GET'] }
 ));
+```
+
+
+### GET Requests
+
+This will enable overriding the method of GET requests by providing a `_method` field in your query string. Example: `/example?_method=PATCH`.
+
+
+### POST Requests
+
+You will also be able override the method of POST requests with a `_method` field in the query string or POST body:
+
+```html
+<h2>Query String</h2>
+<form action="/example?_method=PATCH" method="post">
+  <input type="submit" value="PATCH">
+</form>
+
+
+<h2>Hidden Input String</h2>
+<form action="/example" method="post">
+  <input type="hidden" name="_method" value="PATCH">
+  <input type="submit" value="PATCH">
+</form>
 ```
 
 

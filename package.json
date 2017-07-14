@@ -7,10 +7,23 @@
     "test": "npm run jasmine",
     "jasmine": "./node_modules/.bin/jasmine"
   },
+  "keywords": [
+    "express",
+    "method",
+    "override",
+    "get",
+    "post",
+    "support"
+  ],
   "author": "bideowego@gmail.com",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "jasmine": "^2.6.0"
+  },
+  "homepage": "https://github.com/BideoWego/express-method-override-get-post-support/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BideoWego/express-method-override-get-post-support/"
   }
 }
