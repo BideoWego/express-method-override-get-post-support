@@ -25,6 +25,19 @@ describe('getPostSupport', () => {
       const method = getPostSupport.callback({});
       expect(method).toBe(undefined);
     });
+
+
+    it('sets the query to body', () => {
+      const req = {
+        query: { 
+          _method: 'PUT',
+          foo: 'bar'
+        }
+      };
+
+      const method = getPostSupport.callback(req);
+      expect(req.body.foo).toBe('bar');
+    });
   });
 
 
