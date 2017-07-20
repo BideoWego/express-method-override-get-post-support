@@ -31,6 +31,7 @@ const callback = (req, res) => {
   if (method) {
     if (key === 'query' && method !== 'get') {
       req.body = req.query;
+      req.query = {};
     }
     return method;
   }
