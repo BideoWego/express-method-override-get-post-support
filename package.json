@@ -1,6 +1,6 @@
 {
   "name": "express-method-override-get-post-support",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Provides support for the Express method-override package to override HTTP methods via GET requests in the query string and POST requests in the POST body.",
   "main": "index.js",
   "scripts": {
