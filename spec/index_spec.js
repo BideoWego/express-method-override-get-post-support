@@ -37,7 +37,6 @@ describe('getPostSupport', () => {
 
       const method = getPostSupport.callback(req);
       expect(req.body.foo).toBe('bar');
-      expect(Object.keys(req.query).length).toBe(0);
     });
   });
 
