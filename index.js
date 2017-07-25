@@ -31,7 +31,10 @@ const callback = (req, res) => {
   if (method) {
     if (key === 'query' && method !== 'get') {
       req.body = req.body || {};
-      Object.assign(req.body, req.query);
+      req.body = JSON.parse(
+        JSON.stringify(req.query)
+      );
+      req.query = {};
     }
     return method;
   }
