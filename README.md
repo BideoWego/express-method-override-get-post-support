@@ -44,14 +44,14 @@ You will also be able override the method of POST requests with a `_method` fiel
 ```html
 <h2>Query String</h2>
 <form action="/example?_method=PATCH" method="post">
-  <input type="submit" value="PATCH">
+  <input type="submit">
 </form>
 
 
 <h2>Hidden Input String</h2>
 <form action="/example" method="post">
   <input type="hidden" name="_method" value="PATCH">
-  <input type="submit" value="PATCH">
+  <input type="submit">
 </form>
 ```
 
